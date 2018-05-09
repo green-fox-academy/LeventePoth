@@ -1,0 +1,23 @@
+html {
+    background: url(../Desktop/topography.png.png) repeat;
+    background-size: 25%;
+    border-image-repeat: repeat-x repeat-y;
+  }
+
+.box {
+    text-align: right;
+    background:rgb(33, 33, 33);
+    width: 100%;
+    margin: 8px 80px;
+    padding: 1%;
+    margin: -8px -8px;
+}
+.list-item {
+    display: inline;
+    margin: 0% 20px;
+} 
+
+
+
+
+
