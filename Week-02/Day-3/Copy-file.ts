@@ -2,6 +2,10 @@
 
 export {};
 
+// Write a function that copies a file to an other
+// It should take the filenames as parameters
+// It should return a boolean that shows if the copy was successful
+
 declare function require(path: string): any;
 let fs = require('fs');
 let charEncoding = 'utf-8'
@@ -14,9 +18,8 @@ function writeToFile(root: string, content: string, numberLines: number) {
         fs.writeFileSync(root, content + '\r\n' + number1); // ésbeleír egy sornyi contentet
     }
   } 
- catch(error) {
-  
-    console.log('');
+  catch(error) {
+    console.log('Unable to write file: my-file.txt');
     return null;
   }
 }
