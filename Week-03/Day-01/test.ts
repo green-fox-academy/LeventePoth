@@ -21,3 +21,7 @@ jozsi.grades.push(5);
 console.log(jozsi);
 let god = new Student('God');
 console.log(god.grades);
+
+let stones: any [] = [0, 0, 0, 1, 0, 1, 0, 0, 0, 0,"\n", 0, 0, 0, 1, 0, 1, 0, 0, 0, 0,] 
+
+console.log(stones)
