@@ -1,0 +1,19 @@
+{
+  "name": "leventepoth",
+  "version": "1.0.0",
+  "description": "[Weekly stuff] (https://github.com/green-fox-academy/LeventePoth)\r [todays work] (https://github.com/LeventePoth/git-lesson-repository)\r [hello world]\r (https://github.com/green-fox-academy/-hello-world-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-fox-academy/LeventePoth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/green-fox-academy/LeventePoth/issues"
+  },
+  "homepage": "https://github.com/green-fox-academy/LeventePoth#readme"
+}
