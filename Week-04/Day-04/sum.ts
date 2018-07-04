@@ -12,7 +12,7 @@
 
 export class Levi {
     sum(something: any[]): any {  
-        for...                  // forral kellene végigpörgetni az array elemeit a string esetében is
+        for...                  // forral kellene végigpörgetni az array elemeit a string esetében isgit 
         if (typeof (something) === "string") {
             return ('string')}
         else {
