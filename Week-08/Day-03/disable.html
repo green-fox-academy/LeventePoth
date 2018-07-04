@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tables and forms</title>
+</head>
+
+<body>
+  <form class="my-form">
+    <div>
+      <h1>
+        What is your favourite pet?
+      </h1>
+    </div>
+    <div>
+      <label>
+        <input class="Cat" type="radio" value="C" name="one">
+        <span>Cat</span>
+      </label>
+      <label>
+        <input class="Dog" type="radio" value="B" name="one">
+        <span>Dog</span>
+      </label>
+      <label>
+        <input  class="Viktor" type="radio" value="C" name="one">
+        <span>Viktor the goldfish</span>
+      </label>
+    </div>
+
+    <div>
+      <div>
+        <h1>
+          Do you want to sign up for cat facts?
+        </h1>
+      </div>
+      <div>
+        <label>
+          <input class="yes" type="radio" value="1" name="two">
+          <span>yes</span>
+        </label>
+        <label>
+          <input type="radio" value="2" name="two">
+          <span>no</span>
+        </label>
+      </div>
+      <div>
+        <button class="cat-btn" disabled>I love Cats</button>
+        <button class="sign" disabled>Sign up</button>
+      </div>
+  </form>
+
+  <script>
+    const pushButton = document.querySelector('.sign');
+    const Cat = document.querySelector('.Cat')
+    Cat.addEventListener('click', function (e) {
+      pushButton.disabled = false;
+    });
+    const pushButton2 = document.querySelector('.cat-btn');
+    const Yes = document.querySelector('.yes')
+    Yes.addEventListener('click', function (e) {
+      if (pushButton.disabled === false) {
+        pushButton2.disabled = false
+      };
+    });
+    const sign = document.querySelector('.sign');
+    sign.addEventListener('click', function (e) {
+      alert("Thank you, you've successfully signed up for cat facts");
+    });
+    const Viktor = document.querySelector('.Viktor');
+    Viktor.addEventListener('click', function (e) {
+      pushButton.disabled = false;
+      pushButton2.disabled = true;
+    });
+    const Dog = document.querySelector('.Dog');
+    Dog.addEventListener('click', function (e) {
+      pushButton.disabled = true;
+      pushButton2.disabled = true;
+    });
+  </script>
+</body>
+
+</html>

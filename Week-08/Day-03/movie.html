@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tables and forms</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="my-form">
+    <select class="my-select">
+      <option value="0" disabled selected>Select a genre</option>
+      <option class="Scifi1" value="opt-1">Sci-fi</option>
+      <option class="Comedy1" value="opt-2">Comedy</option>
+      <option class="Drama1" value="opt-3">Drama</option>
+    </select>
+  </form>
+  <form class="my-form2">
+    <select class="my-select">
+      <option value="0" disabled selected>Select a movie</option>
+      <option value="opt-11" class="Scifi" style="display: none;">Moon</option>
+      <option value="opt-12" class="Scifi" style="display: none;">2001 Space odessy</option>
+      <option value="opt-13" class="Scifi" style="display: none;">Contact</option>
+      <option value="opt-14" class="Drama" style="display: none;">Darkest hour</option>
+      <option value="opt-15" class="Drama" style="display: none;">There will be blood</option>
+      <option value="opt-16" class="Drama" style="display: none;">American beauty</option>
+      <option value="opt-17" class="Comedy" style="display: none;">Airplane!</option>
+      <option value="opt-18" class="Comedy" style="display: none;">Deadpool</option>
+      <option value="opt-19" class="Comedy" style="display: none;">Wayne's World</option>
+    </select>
+  </form>
+  <script>
+    const Scifi1 = document.querySelector('.Scifi1');
+    const Comedy1 = document.querySelector('.Comedy1');
+    const Drama1 = document.querySelector('.Drama1');
+    const Scifi = document.querySelectorAll('.Scifi');
+    const Drama = document.querySelectorAll('.Drama');
+    const Comedy = document.querySelectorAll('.Comedy');
+
+    document.querySelector('.my-form').addEventListener('click', function (e) {
+      if (e.target.value === "opt-1") {
+        for ( let i = 0; i < 4; i++) {       
+        Scifi[i].style.display = 'block'
+      }}
+      else if (e.target.value === "opt-2") {
+        for ( let i = 0; i < 4; i++) {       
+        Drama[i].style.display = 'block'
+      }}
+      else if (e.target.value === "opt-3") {
+        for ( let i = 0; i < 4; i++) {       
+        Comedy[i].style.display = 'block'
+      }}
+    });
+  </script>
+</body>
+
+</html>
