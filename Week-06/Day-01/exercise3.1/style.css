@@ -1,0 +1,33 @@
+/* Excersise 1 */
+
+/* html, body{
+    height: 100%;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container{ 
+    background-color: yellow;                      
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 100%;
+    height: 200px;
+    list-style-type: none;
+}
+
+/* .item{
+    align-items: center;
+} */
+
+.item{
+    margin: 20px;
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    z-index: 9999;
+}

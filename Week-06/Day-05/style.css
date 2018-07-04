@@ -1,0 +1,26 @@
+body{
+background: #eeee;
+}
+
+.container{ 
+    background-color: rgb(49, 49, 36);                      
+    display: flex;
+    margin: 90px auto;
+    width: 600px;
+    height: 200px;
+}
+
+.gallery {
+    /* background-color: rgb(185, 185, 31);                       */
+    display: flex;
+    width: 550px;
+    height: 200px;
+}
+
+.newimage {
+    /* background-color: rgb(185, 31, 31);                       */
+    display: flex;
+    width: 550px;
+    height: 200px;
+    /* order: 9999; */
+}

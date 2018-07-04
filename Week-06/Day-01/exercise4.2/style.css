@@ -1,0 +1,76 @@
+/* Excersise 1 */
+
+/* html, body{
+    height: 100%;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container{ 
+    background-color: rgb(49, 49, 36);                      
+    display: flex;
+    margin: 90px auto;
+    width: 1000px;
+    height: 800px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.Main-content{
+    background-color: yellow;
+    height: 90%;
+    width: 60%;
+}
+
+.Sidebar{
+    background-color: green;
+    height: 90%;
+    width: 40%;
+}
+
+.Footer{
+    background-color: grey;
+    height: 10%;
+    width: 100%;
+}
+
+.header{
+    top: 0;
+    background-color: purple;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+}
+
+.Navigation-Links{
+    list-style-type: none;                  
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto auto;
+    max-width: 100%;
+}
+
+.item{
+    margin: 10px;
+    background-color: cyan;
+    height: 40px;
+    width: 110px;
+    z-index: 9999;
+}
+
+
+/* .item{
+    align-items: center;
+} */
+
+/* .item{
+    margin-left: 10px;
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    z-index: 9999;
+} */
